@@ -1,0 +1,91 @@
+27-Sep-2026 10:50:03.786 INFO [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files (x86)\Java\jdk1.8.0_65\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Java\jdk1.8.0_65\bin;C:\Users\hp\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\hp\AppData\Local\Programs\Python\Python312\;C:\Users\hp\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\hp\AppData\Local\Programs\Python\Python313\;C:\Users\hp\AppData\Local\Programs\Python\Launcher\;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;C:\MinGW\bin;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\AppData\Local\GitHubDesktop\bin;.
+27-Sep-2026 10:50:03.985 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+27-Sep-2026 10:50:04.056 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Sep-2026 10:50:04.059 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+27-Sep-2026 10:50:04.060 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Sep-2026 10:50:04.061 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 560 ms
+27-Sep-2026 10:50:04.082 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+27-Sep-2026 10:50:04.082 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.3
+27-Sep-2026 10:50:04.090 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\newtomcat\apache-tomcat-8.0.3-windows-x64\apache-tomcat-8.0.3\webapps\docs
+27-Sep-2026 10:50:04.458 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGenerator.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [180] milliseconds.
+27-Sep-2026 10:50:04.478 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\newtomcat\apache-tomcat-8.0.3-windows-x64\apache-tomcat-8.0.3\webapps\examples
+27-Sep-2026 10:50:04.993 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\newtomcat\apache-tomcat-8.0.3-windows-x64\apache-tomcat-8.0.3\webapps\host-manager
+27-Sep-2026 10:50:05.012 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\newtomcat\apache-tomcat-8.0.3-windows-x64\apache-tomcat-8.0.3\webapps\manager
+27-Sep-2026 10:50:05.036 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\newtomcat\apache-tomcat-8.0.3-windows-x64\apache-tomcat-8.0.3\webapps\ROOT
+27-Sep-2026 10:50:05.052 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+27-Sep-2026 10:50:05.056 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+27-Sep-2026 10:50:05.058 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 997 ms
+27-Sep-2026 10:50:08.710 INFO [http-nio-8080-exec-4] org.apache.catalina.startup.HostConfig.undeploy Undeploying context []
+27-Sep-2026 10:50:08.746 INFO [http-nio-8080-exec-6] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor F:\newtomcat\apache-tomcat-8.0.3-windows-x64\apache-tomcat-8.0.3\conf\Catalina\localhost\ROOT.xml
+27-Sep-2026 10:50:08.780 WARNING [http-nio-8080-exec-6] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+27-Sep-2026 10:50:09.252 SEVERE [http-nio-8080-exec-6] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [META-INF/versions/9/module-info.class] from Jar [jar:file:/C:/Users/hp/OneDrive/Documents/NetBeansProjects/first/build/web/WEB-INF/lib/json-20260814.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:127)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:59)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:168)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:92)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2032)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1963)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1931)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1882)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1146)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:768)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:303)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5057)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:702)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:697)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:579)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:455)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1554)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:300)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1428)
+	at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:885)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:343)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:618)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:301)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:615)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:136)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:74)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1015)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:652)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1575)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1533)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+27-Sep-2026 10:50:09.305 INFO [http-nio-8080-exec-6] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+27-Sep-2026 10:50:09.318 INFO [http-nio-8080-exec-5] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]] after start() had already been called. The second call will be ignored.
+27-Sep-2026 10:52:31.279 INFO [http-nio-8080-exec-15] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor F:\newtomcat\apache-tomcat-8.0.3-windows-x64\apache-tomcat-8.0.3\conf\Catalina\localhost\StudentManagementSystem.xml
+27-Sep-2026 10:52:31.286 WARNING [http-nio-8080-exec-15] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+27-Sep-2026 10:52:32.561 INFO [http-nio-8080-exec-15] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+27-Sep-2026 10:52:32.579 INFO [http-nio-8080-exec-16] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/StudentManagementSystem]] after start() had already been called. The second call will be ignored.
+27-Sep-2026 10:53:20.444 INFO [http-nio-8080-exec-14] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/StudentManagementSystem]
+27-Sep-2026 10:53:20.466 INFO [http-nio-8080-exec-20] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor F:\newtomcat\apache-tomcat-8.0.3-windows-x64\apache-tomcat-8.0.3\conf\Catalina\localhost\StudentManagementSystem.xml
+27-Sep-2026 10:53:20.476 WARNING [http-nio-8080-exec-20] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+27-Sep-2026 10:53:21.728 INFO [http-nio-8080-exec-20] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+27-Sep-2026 10:53:21.738 INFO [http-nio-8080-exec-13] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/StudentManagementSystem]] after start() had already been called. The second call will be ignored.
